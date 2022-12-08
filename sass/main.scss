@@ -5,11 +5,12 @@
 
 @import "bass/animations";
 @import "bass/bass";
-@import "bass/typography";
+@import "bass/_typography";
 @import "bass/utilities";
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
