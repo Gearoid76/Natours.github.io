@@ -121,6 +121,10 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -456,7 +460,7 @@ body {
 
 .section-tours {
   background-color: #ebeaea;
-  padding: 25rem 15rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 
 .section-stories {
