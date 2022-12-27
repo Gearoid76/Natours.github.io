@@ -4,7 +4,7 @@
     &__photo {
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
+        //border-radius: 2px;  5:38  37.building the about section
         position: absolute;
         z-index: 10;
         transition: all .2s;
@@ -17,8 +17,7 @@
 
         &--p2 {
             right:0;
-            top:2rem;
-            
+            top:2rem;    
         }
 
         &--p3 {
@@ -33,10 +32,10 @@
             z-index: 20;
             
         }
-        &:hover &__photo:not(:hover) {
-            transform: scale(.8);
-        }
 
+    }
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
     }
    
 }
