@@ -1,3 +1,22 @@
+@charset "UTF-8";
+/*
+     0-600px   Phone 
+    600-900px Tanöet portrait  all mazx width 
+    900-1200px Tablet landscape
+    1200-1800px is where our normal styles apply
+    1800px + BIG DESKTOP   minwidth
+    
+    - phone
+    -tab-portraint
+    -tab-lanscape
+    -big-desktop 
+
+    1 em = 16px
+    37.5em = 600px
+    56.25em = 900px
+    75em = 900px
+    112.5 = 1800px
+    */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -37,6 +56,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -450,7 +478,7 @@ body {
     width: 33.33333%;
     display: table-cell; }
   .popup__right {
-    width: 66.66667 .popup__right;
+    width: 66.666666;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }

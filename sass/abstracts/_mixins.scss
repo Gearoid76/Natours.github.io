@@ -12,3 +12,39 @@
         left: 50%;
         transform: translate(-50%,-50%);
 }
+
+// MEDIA QUERY MANAGER
+/*
+     0-600px   Phone 
+    600-900px Tanöet portrait  all mazx width 
+    900-1200px Tablet landscape
+    1200-1800px is where our normal styles apply
+    1800px + BIG DESKTOP   minwidth
+    
+    - phone
+    -tab-portraint
+    -tab-lanscape
+    -big-desktop 
+
+    1 em = 16px
+    37.5em = 600px
+    56.25em = 900px
+    75em = 900px
+    112.5 = 1800px
+    */
+
+    @mixin respond($breakpoint) {
+        @if$breakpoint == phone {
+            @media (max-width: 37.5em) {@content }; 
+        } 
+        @if$breakpoint == tab-portrait {
+            @media (max-width: 56.25em) {@content }; 
+        }
+        @if$breakpoint == tab-landscape {
+            @media (max-width: 75em) {@content }; 
+        }
+        @if$breakpoint == big-desktop {
+            @media (min-width: 112.5em) {@content }; 
+        }   
+    }
+    
